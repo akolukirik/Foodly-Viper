@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8s-zC-T2t">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RedHatDisplay.ttf">
+            <string>RedHatDisplayRoman-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register Page View Controller-->
+        <scene sceneID="4e3-xv-bDR">
+            <objects>
+                <viewController storyboardIdentifier="RegisterPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8s-zC-T2t" customClass="RegisterPageViewController" customModule="GraduationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wT6-ai-9nW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fue-mU-seb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFj-I9-EFs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your Account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PK-ch-b9J">
+                                <rect key="frame" x="44" y="106" width="231" height="101"/>
+                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zyk-7I-XIe">
+                                <rect key="frame" x="39" y="332" width="337" height="147"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egE-VE-1ua">
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="66"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mail" translatesAutoresizingMaskIntoConstraints="NO" id="2b4-X6-Btm">
+                                                <rect key="frame" x="8" y="21" width="24" height="24"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Shd-zy-G8Y">
+                                                <rect key="frame" x="37" y="16" width="292" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="Main Color"/>
+                                                <color key="textColor" name="Main Black"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Shd-zy-G8Y" firstAttribute="leading" secondItem="2b4-X6-Btm" secondAttribute="trailing" constant="5" id="7lR-rd-RFX"/>
+                                            <constraint firstItem="2b4-X6-Btm" firstAttribute="top" secondItem="egE-VE-1ua" secondAttribute="top" constant="21" id="E8R-xN-itn"/>
+                                            <constraint firstAttribute="bottom" secondItem="2b4-X6-Btm" secondAttribute="bottom" constant="21" id="VCD-ZW-zqx"/>
+                                            <constraint firstItem="Shd-zy-G8Y" firstAttribute="top" secondItem="egE-VE-1ua" secondAttribute="top" constant="16" id="f0s-4z-sxR"/>
+                                            <constraint firstItem="2b4-X6-Btm" firstAttribute="leading" secondItem="egE-VE-1ua" secondAttribute="leading" constant="8" id="nt7-rw-B1a"/>
+                                            <constraint firstAttribute="trailing" secondItem="Shd-zy-G8Y" secondAttribute="trailing" constant="8" id="xAc-UH-xFN"/>
+                                            <constraint firstAttribute="bottom" secondItem="Shd-zy-G8Y" secondAttribute="bottom" constant="16" id="zza-OJ-Qaj"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFz-zH-4dZ">
+                                        <rect key="frame" x="0.0" y="81" width="337" height="66"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LockOn" translatesAutoresizingMaskIntoConstraints="NO" id="zGq-SW-zz1">
+                                                <rect key="frame" x="8" y="21" width="24" height="25"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5nd-Df-g0b">
+                                                <rect key="frame" x="40" y="16" width="289" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="Main Color"/>
+                                                <color key="textColor" name="Main Black"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="5nd-Df-g0b" secondAttribute="trailing" constant="8" id="2eL-rC-OiH"/>
+                                            <constraint firstItem="zGq-SW-zz1" firstAttribute="leading" secondItem="GFz-zH-4dZ" secondAttribute="leading" constant="8" id="HeG-AM-1Wn"/>
+                                            <constraint firstItem="5nd-Df-g0b" firstAttribute="leading" secondItem="zGq-SW-zz1" secondAttribute="trailing" constant="8" id="Rp9-pi-XiA"/>
+                                            <constraint firstAttribute="bottom" secondItem="5nd-Df-g0b" secondAttribute="bottom" constant="16" id="dmH-yO-Xbp"/>
+                                            <constraint firstItem="5nd-Df-g0b" firstAttribute="top" secondItem="GFz-zH-4dZ" secondAttribute="top" constant="16" id="fLQ-Fv-e6s"/>
+                                            <constraint firstItem="zGq-SW-zz1" firstAttribute="top" secondItem="GFz-zH-4dZ" secondAttribute="top" constant="21" id="nBe-IH-81g"/>
+                                            <constraint firstAttribute="bottom" secondItem="zGq-SW-zz1" secondAttribute="bottom" constant="20" symbolic="YES" id="qXg-j8-p3S"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GFz-zH-4dZ" firstAttribute="leading" secondItem="zyk-7I-XIe" secondAttribute="leading" id="6HU-Xf-Lem"/>
+                                    <constraint firstAttribute="bottom" secondItem="GFz-zH-4dZ" secondAttribute="bottom" id="CSl-od-nPy"/>
+                                    <constraint firstAttribute="trailing" secondItem="GFz-zH-4dZ" secondAttribute="trailing" id="LZW-dm-n11"/>
+                                    <constraint firstAttribute="trailing" secondItem="egE-VE-1ua" secondAttribute="trailing" id="S5Z-nb-7iy"/>
+                                    <constraint firstItem="egE-VE-1ua" firstAttribute="top" secondItem="zyk-7I-XIe" secondAttribute="top" id="bbx-4A-AQq"/>
+                                    <constraint firstItem="egE-VE-1ua" firstAttribute="leading" secondItem="zyk-7I-XIe" secondAttribute="leading" id="wxs-2C-J8a"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxE-Li-6qJ">
+                                <rect key="frame" x="39" y="494" width="337" height="66"/>
+                                <color key="backgroundColor" name="Main Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="ZWr-81-GlL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="REGISTER">
+                                    <fontDescription key="titleFontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="18"/>
+                                    <color key="baseForegroundColor" name="White"/>
+                                    <color key="baseBackgroundColor" name="Main Color"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpButtonClicked:" destination="d8s-zC-T2t" eventType="touchUpInside" id="vcp-9T-p2c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="6PK-ch-b9J" firstAttribute="top" secondItem="wT6-ai-9nW" secondAttribute="bottom" constant="58" id="Ccr-cV-rts"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6PK-ch-b9J" secondAttribute="trailing" constant="119" id="IT1-Jg-6LB"/>
+                            <constraint firstItem="zyk-7I-XIe" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="19" id="J33-0Q-LVG"/>
+                            <constraint firstItem="zyk-7I-XIe" firstAttribute="top" secondItem="6PK-ch-b9J" secondAttribute="bottom" constant="125" id="M1R-FL-zic"/>
+                            <constraint firstItem="6PK-ch-b9J" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="24" id="MPI-dN-rOH"/>
+                            <constraint firstItem="IxE-Li-6qJ" firstAttribute="top" secondItem="zyk-7I-XIe" secondAttribute="bottom" constant="15" id="kzN-gd-Eik"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IxE-Li-6qJ" secondAttribute="trailing" constant="18" id="p1U-SM-EBK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zyk-7I-XIe" secondAttribute="trailing" constant="18" id="rln-Hp-pb1"/>
+                            <constraint firstItem="IxE-Li-6qJ" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="19" id="yt1-ZD-VCI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i2Z-2f-Val"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Shd-zy-G8Y" id="B0f-2f-grH"/>
+                        <outlet property="passwordTextField" destination="5nd-Df-g0b" id="xxq-yX-PJA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqd-wc-fRj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.768115942028992" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LockOn" width="24" height="24"/>
+        <image name="Mail" width="24" height="24"/>
+        <namedColor name="Background">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Main Black">
+            <color red="0.10199999809265137" green="0.027000000700354576" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Main Color">
+            <color red="1" green="0.25900000333786011" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

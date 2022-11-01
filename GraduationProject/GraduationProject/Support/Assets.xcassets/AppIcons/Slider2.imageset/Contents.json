@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Wavy Buddies Delivery on the Way.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Wavy Buddies Delivery on the Way@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Wavy Buddies Delivery on the Way@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

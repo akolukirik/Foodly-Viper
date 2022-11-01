@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8s-zC-T2t">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RedHatDisplay.ttf">
+            <string>RedHatDisplayRoman-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Payment Method Page View Controller-->
+        <scene sceneID="4e3-xv-bDR">
+            <objects>
+                <viewController storyboardIdentifier="PaymentMethodPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8s-zC-T2t" customClass="PaymentMethodPageViewController" customModule="GraduationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wT6-ai-9nW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fue-mU-seb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFj-I9-EFs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goy-LY-D17">
+                                <rect key="frame" x="111" y="65" width="192" height="33.5"/>
+                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="25"/>
+                                <color key="textColor" name="Gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hp6-53-YA4">
+                                <rect key="frame" x="33" y="238.5" width="348" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTy-KK-Dak">
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="61.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFh-qt-Qon">
+                                                <rect key="frame" x="61" y="8" width="191" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXc-0r-5Jy">
+                                                <rect key="frame" x="8" y="11" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="mastercard"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Mastercard"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="ugG-cJ-c54"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKH-nt-Uvd">
+                                        <rect key="frame" x="0.0" y="76.5" width="348" height="61.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac7-eU-kuP">
+                                                <rect key="frame" x="8" y="11" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="paypal"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Paypal"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paypal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rd-D5-f6u">
+                                                <rect key="frame" x="61" y="8" width="191" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="XKg-ON-wzC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeh-fH-t0X">
+                                        <rect key="frame" x="0.0" y="153" width="348" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bG-2J-dN4">
+                                                <rect key="frame" x="8" y="10" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="apple"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Apple"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apple Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-Y0-A5T">
+                                                <rect key="frame" x="61" y="8" width="191" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="8Bo-XS-YDq"/>
+                                            <constraint firstAttribute="height" constant="66" id="hq5-Ef-9sC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRJ-eR-Eqn">
+                                        <rect key="frame" x="0.0" y="234" width="348" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljl-BW-iNc">
+                                                <rect key="frame" x="8" y="11" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="google 1"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Google1"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9z-Qq-jT1">
+                                                <rect key="frame" x="61" y="8" width="191" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="Fb5-2y-6lD"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rTy-KK-Dak" firstAttribute="leading" secondItem="hp6-53-YA4" secondAttribute="leading" id="RSc-Vj-7C0"/>
+                                    <constraint firstItem="aeh-fH-t0X" firstAttribute="leading" secondItem="nRJ-eR-Eqn" secondAttribute="leading" id="bqU-ki-CoU"/>
+                                    <constraint firstItem="rTy-KK-Dak" firstAttribute="leading" secondItem="QKH-nt-Uvd" secondAttribute="leading" id="glk-Ag-qDo"/>
+                                    <constraint firstItem="QKH-nt-Uvd" firstAttribute="leading" secondItem="aeh-fH-t0X" secondAttribute="leading" id="n7S-AI-OsN"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Via" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVv-eO-5nR">
+                                <rect key="frame" x="20" y="151" width="374" height="42.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42.5" id="HS5-XQ-O5O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-M6-7LI">
+                                <rect key="frame" x="20" y="56" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nC9-Zn-gjT"/>
+                                    <constraint firstAttribute="width" constant="50" id="p2K-Pq-4uw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="ArrowLeft">
+                                    <color key="baseBackgroundColor" name="SecondaryColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="d8s-zC-T2t" eventType="touchUpInside" id="PLT-qL-7f0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="NVv-eO-5nR" firstAttribute="trailing" secondItem="IFj-I9-EFs" secondAttribute="trailingMargin" id="87V-ZN-rkV"/>
+                            <constraint firstItem="hp6-53-YA4" firstAttribute="top" secondItem="NVv-eO-5nR" secondAttribute="bottom" constant="45" id="Eqt-vl-Apa"/>
+                            <constraint firstItem="goy-LY-D17" firstAttribute="top" secondItem="wT6-ai-9nW" secondAttribute="bottom" constant="17" id="Fyv-V5-cwN"/>
+                            <constraint firstItem="NVv-eO-5nR" firstAttribute="top" secondItem="t4a-M6-7LI" secondAttribute="bottom" constant="45" id="T7u-dp-Hpr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hp6-53-YA4" secondAttribute="trailing" constant="13" id="Xyo-nN-L2s"/>
+                            <constraint firstItem="t4a-M6-7LI" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" id="fcS-JI-DqS"/>
+                            <constraint firstItem="NVv-eO-5nR" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" id="hLT-p2-QHR"/>
+                            <constraint firstItem="goy-LY-D17" firstAttribute="centerX" secondItem="IFj-I9-EFs" secondAttribute="centerX" id="suK-C7-s6W"/>
+                            <constraint firstItem="hp6-53-YA4" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="13" id="uEz-2q-1FE"/>
+                            <constraint firstItem="NVv-eO-5nR" firstAttribute="top" secondItem="t4a-M6-7LI" secondAttribute="bottom" constant="45" id="wTj-ts-LoL"/>
+                            <constraint firstItem="t4a-M6-7LI" firstAttribute="top" secondItem="IFj-I9-EFs" secondAttribute="topMargin" constant="8" id="xwD-XY-0zI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i2Z-2f-Val"/>
+                    <connections>
+                        <outlet property="applePayView" destination="aeh-fH-t0X" id="nW9-as-sjW"/>
+                        <outlet property="creditCardView" destination="rTy-KK-Dak" id="wlD-Bu-Lxk"/>
+                        <outlet property="googlePayView" destination="nRJ-eR-Eqn" id="HYM-2V-QFu"/>
+                        <outlet property="payPalView" destination="QKH-nt-Uvd" id="ojw-nl-8rM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqd-wc-fRj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.768115942028992" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Apple" width="25.5" height="30"/>
+        <image name="ArrowLeft" width="32" height="32"/>
+        <image name="Google1" width="28" height="27.5"/>
+        <image name="Mastercard" width="38" height="24"/>
+        <image name="Paypal" width="25" height="29"/>
+        <image name="apple" width="25.5" height="30"/>
+        <image name="google 1" width="28" height="27.5"/>
+        <image name="mastercard" width="38" height="24"/>
+        <image name="paypal" width="25" height="29"/>
+        <namedColor name="Background">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.61599999666213989" green="0.58799999952316284" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="1" green="0.9100000262260437" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

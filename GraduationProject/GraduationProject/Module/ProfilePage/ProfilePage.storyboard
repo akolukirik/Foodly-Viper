@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8s-zC-T2t">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RedHatDisplay.ttf">
+            <string>RedHatDisplayRoman-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Profile Page View Controller-->
+        <scene sceneID="4e3-xv-bDR">
+            <objects>
+                <viewController storyboardIdentifier="ProfilePageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8s-zC-T2t" customClass="ProfilePageViewController" customModule="GraduationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wT6-ai-9nW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fue-mU-seb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFj-I9-EFs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Hb-DI-6i7">
+                                <rect key="frame" x="143" y="68" width="128" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="7vW-5r-2FE">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="FjN-qe-cF3"/>
+                                            <constraint firstAttribute="height" constant="128" id="lEf-vF-wSx"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="9wB-mM-OcB">
+                                        <rect key="frame" x="106" y="106" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="4cu-Ft-GMR"/>
+                                            <constraint firstAttribute="height" constant="22" id="tOW-FZ-UxT"/>
+                                            <constraint firstAttribute="width" secondItem="9wB-mM-OcB" secondAttribute="height" multiplier="1:1" id="zc8-xQ-mYp"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7vW-5r-2FE" secondAttribute="trailing" id="BA3-sY-u9d"/>
+                                    <constraint firstItem="7vW-5r-2FE" firstAttribute="leading" secondItem="7Hb-DI-6i7" secondAttribute="leading" id="Bh8-Xg-eej"/>
+                                    <constraint firstAttribute="width" constant="128" id="KsO-cv-KIT"/>
+                                    <constraint firstAttribute="trailing" secondItem="9wB-mM-OcB" secondAttribute="trailing" id="P4V-9k-pap"/>
+                                    <constraint firstAttribute="bottom" secondItem="7vW-5r-2FE" secondAttribute="bottom" id="RDI-Tv-A4c"/>
+                                    <constraint firstAttribute="height" constant="128" id="lJg-Jt-BWF"/>
+                                    <constraint firstItem="7vW-5r-2FE" firstAttribute="top" secondItem="7Hb-DI-6i7" secondAttribute="top" id="qsa-Pg-zYm"/>
+                                    <constraint firstAttribute="bottom" secondItem="9wB-mM-OcB" secondAttribute="bottom" id="wvc-Nf-fdt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ali Kolukırık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2a-m3-d6x">
+                                <rect key="frame" x="109" y="213" width="197" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0ch-a8-iq4"/>
+                                    <constraint firstAttribute="height" constant="50" id="vxk-B0-Z81"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@akolukirik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTC-Hy-1BD">
+                                <rect key="frame" x="109" y="271" width="197" height="26.5"/>
+                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                <color key="textColor" name="Gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="h9Q-hK-tmT">
+                                <rect key="frame" x="33" y="326" width="348" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eF-cA-bhH">
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="61.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preferences" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uL-aB-34c">
+                                                <rect key="frame" x="61" y="8" width="191" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag4-L9-PGu">
+                                                <rect key="frame" x="8" y="11" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="Settings">
+                                                    <color key="baseBackgroundColor" name="SecondaryColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="oxs-Xj-eaN"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kex-gA-gS1">
+                                        <rect key="frame" x="0.0" y="76.5" width="348" height="61.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7e-0r-maV">
+                                                <rect key="frame" x="8" y="11" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="LockOff">
+                                                    <color key="baseBackgroundColor" name="SecondaryColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9If-QY-wNJ">
+                                                <rect key="frame" x="61" y="8" width="191" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="eac-If-GyJ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjs-Me-MEL">
+                                        <rect key="frame" x="0.0" y="153" width="348" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdo-85-jvS">
+                                                <rect key="frame" x="8" y="10" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="Question">
+                                                    <color key="baseBackgroundColor" name="SecondaryColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1S-1Y-vzA">
+                                                <rect key="frame" x="61" y="8" width="191" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="99z-7r-s7v"/>
+                                            <constraint firstAttribute="height" constant="66" id="Gpm-oe-xhs"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNb-2K-gen">
+                                        <rect key="frame" x="0.0" y="234" width="348" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26U-O5-mgH">
+                                                <rect key="frame" x="8" y="11" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="Share">
+                                                    <color key="baseBackgroundColor" name="SecondaryColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signOutButtonClicked:" destination="d8s-zC-T2t" eventType="touchUpInside" id="xRG-b7-pob"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-e1-6Tb">
+                                                <rect key="frame" x="61" y="8" width="191" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="White"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="HXs-ja-xZc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4eF-cA-bhH" firstAttribute="leading" secondItem="h9Q-hK-tmT" secondAttribute="leading" id="OyM-el-ova"/>
+                                    <constraint firstItem="4eF-cA-bhH" firstAttribute="leading" secondItem="Kex-gA-gS1" secondAttribute="leading" id="bkr-uQ-VDo"/>
+                                    <constraint firstItem="Cjs-Me-MEL" firstAttribute="leading" secondItem="fNb-2K-gen" secondAttribute="leading" id="mVn-C1-Gj7"/>
+                                    <constraint firstItem="Kex-gA-gS1" firstAttribute="leading" secondItem="Cjs-Me-MEL" secondAttribute="leading" id="oZA-HI-h12"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="K2a-m3-d6x" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="89" id="9Ca-oe-P6p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Hb-DI-6i7" secondAttribute="trailing" constant="123" id="Bo4-pE-vyA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h9Q-hK-tmT" secondAttribute="trailing" constant="13" id="H7P-8k-ulE"/>
+                            <constraint firstItem="h9Q-hK-tmT" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="13" id="Hto-8X-Jvh"/>
+                            <constraint firstItem="7Hb-DI-6i7" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="123" id="OBs-cZ-mtI"/>
+                            <constraint firstItem="h9Q-hK-tmT" firstAttribute="top" secondItem="uTC-Hy-1BD" secondAttribute="bottom" constant="28.5" id="R4A-it-4no"/>
+                            <constraint firstItem="7Hb-DI-6i7" firstAttribute="top" secondItem="wT6-ai-9nW" secondAttribute="bottom" constant="20" id="WUp-Ya-a5Y"/>
+                            <constraint firstItem="uTC-Hy-1BD" firstAttribute="top" secondItem="K2a-m3-d6x" secondAttribute="bottom" constant="8" id="apB-mH-YgS"/>
+                            <constraint firstItem="uTC-Hy-1BD" firstAttribute="top" secondItem="K2a-m3-d6x" secondAttribute="bottom" constant="8" id="b2r-GF-aOS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uTC-Hy-1BD" secondAttribute="trailing" constant="88" id="c5j-2k-X1V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K2a-m3-d6x" secondAttribute="trailing" constant="88" id="cdM-R0-djg"/>
+                            <constraint firstItem="uTC-Hy-1BD" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="89" id="jnf-ac-6EU"/>
+                            <constraint firstItem="K2a-m3-d6x" firstAttribute="top" secondItem="7Hb-DI-6i7" secondAttribute="bottom" constant="17" id="vI7-gm-xra"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="i2Z-2f-Val"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqd-wc-fRj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.768115942028992" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ellipse" width="22" height="22"/>
+        <image name="LockOff" width="24" height="24"/>
+        <image name="Profile" width="500" height="500"/>
+        <image name="Question" width="24" height="24"/>
+        <image name="Settings" width="24" height="24"/>
+        <image name="Share" width="24" height="24"/>
+        <namedColor name="Background">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.61599999666213989" green="0.58799999952316284" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="1" green="0.9100000262260437" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

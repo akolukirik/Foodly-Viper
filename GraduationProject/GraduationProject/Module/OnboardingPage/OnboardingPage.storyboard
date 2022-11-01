@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8s-zC-T2t">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Page View Controller-->
+        <scene sceneID="4e3-xv-bDR">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8s-zC-T2t" customClass="OnboardingPageViewController" customModule="GraduationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wT6-ai-9nW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fue-mU-seb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFj-I9-EFs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UDq-A6-5DT">
+                                <rect key="frame" x="0.0" y="93" width="414" height="597"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="597" id="hfT-oI-DIF"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="HUp-CX-7f1">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onboard" id="JTN-kg-XkM">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NHo-C0-IYf">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-xI-bLT">
+                                <rect key="frame" x="149" y="698" width="116" height="22"/>
+                                <color key="pageIndicatorTintColor" name="Gray 2"/>
+                                <color key="currentPageIndicatorTintColor" name="Main Color"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqR-M0-hHG">
+                                <rect key="frame" x="142.5" y="754" width="129" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="Ygl-Mp-rdW"/>
+                                    <constraint firstAttribute="height" constant="51" id="w6h-ft-gKC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Skip">
+                                    <color key="baseBackgroundColor" name="Main Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="skipButtonClicked:" destination="d8s-zC-T2t" eventType="touchUpInside" id="O6N-kL-jgz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="UDq-A6-5DT" firstAttribute="centerX" secondItem="Ayc-xI-bLT" secondAttribute="centerX" id="D5U-Lt-exU"/>
+                            <constraint firstItem="Fue-mU-seb" firstAttribute="top" secondItem="rqR-M0-hHG" secondAttribute="bottom" constant="57" id="E1I-m7-MxG"/>
+                            <constraint firstItem="rqR-M0-hHG" firstAttribute="centerX" secondItem="Ayc-xI-bLT" secondAttribute="centerX" id="Fau-aI-r0u"/>
+                            <constraint firstItem="Ayc-xI-bLT" firstAttribute="centerX" secondItem="IFj-I9-EFs" secondAttribute="centerX" id="GQS-SP-kXS"/>
+                            <constraint firstItem="rqR-M0-hHG" firstAttribute="top" secondItem="Ayc-xI-bLT" secondAttribute="bottom" constant="34" id="H7v-RD-Dfu"/>
+                            <constraint firstItem="UDq-A6-5DT" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="-20" id="HLI-uL-Qn7"/>
+                            <constraint firstItem="UDq-A6-5DT" firstAttribute="top" secondItem="wT6-ai-9nW" secondAttribute="bottom" constant="45" id="TNB-Kc-Cnj"/>
+                            <constraint firstItem="Ayc-xI-bLT" firstAttribute="top" secondItem="UDq-A6-5DT" secondAttribute="bottom" constant="8" id="fuS-uy-Zw5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i2Z-2f-Val"/>
+                    <connections>
+                        <outlet property="onboardingCollectionView" destination="UDq-A6-5DT" id="qz1-YD-piv"/>
+                        <outlet property="onboardingPageController" destination="Ayc-xI-bLT" id="0Sv-NF-6qN"/>
+                        <outlet property="skipButton" destination="rqR-M0-hHG" id="pja-MD-TJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqd-wc-fRj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.768115942028992" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray 2">
+            <color red="0.78799998760223389" green="0.77300000190734863" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Main Color">
+            <color red="1" green="0.25900000333786011" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

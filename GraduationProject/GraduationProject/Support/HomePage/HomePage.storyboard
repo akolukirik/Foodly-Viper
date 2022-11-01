@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RedHatDisplay.ttf">
+            <string>RedHatDisplayRoman-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="4e3-xv-bDR">
+            <objects>
+                <viewController storyboardIdentifier="HomePageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d8s-zC-T2t" customClass="HomePageViewController" customModule="GraduationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wT6-ai-9nW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fue-mU-seb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFj-I9-EFs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rr9-cv-fmF">
+                                <rect key="frame" x="0.0" y="200" width="414" height="696"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="shQ-Zq-qkV">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="foodsCell" id="gJb-p2-fZn">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Pd1-lv-nym">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCu-gl-1OC">
+                                <rect key="frame" x="42" y="136" width="330" height="56"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-iQ-PLP">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="56"/>
+                                        <color key="barTintColor" name="Background"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="Background"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="Background"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="d8s-zC-T2t" id="4yO-kd-gnK"/>
+                                        </connections>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HA1-iQ-PLP" secondAttribute="bottom" id="3yU-nO-ER6"/>
+                                    <constraint firstItem="HA1-iQ-PLP" firstAttribute="leading" secondItem="aCu-gl-1OC" secondAttribute="leading" id="NYs-qK-gaB"/>
+                                    <constraint firstItem="HA1-iQ-PLP" firstAttribute="top" secondItem="aCu-gl-1OC" secondAttribute="top" id="ew2-9q-CIT"/>
+                                    <constraint firstAttribute="trailing" secondItem="HA1-iQ-PLP" secondAttribute="trailing" id="obH-39-ikK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7r7-vT-3NU">
+                                <rect key="frame" x="121" y="90.5" width="172" height="37.5"/>
+                                <fontDescription key="fontDescription" name="RedHatDisplayRoman-Regular" family="Red Hat Display" pointSize="28"/>
+                                <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="rr9-cv-fmF" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="-20" id="7D3-DG-gsd"/>
+                            <constraint firstItem="rr9-cv-fmF" firstAttribute="bottom" secondItem="IFj-I9-EFs" secondAttribute="bottomMargin" constant="34" id="8R4-22-eak"/>
+                            <constraint firstItem="aCu-gl-1OC" firstAttribute="top" secondItem="7r7-vT-3NU" secondAttribute="bottom" constant="8" symbolic="YES" id="AHz-ko-lUi"/>
+                            <constraint firstItem="aCu-gl-1OC" firstAttribute="centerX" secondItem="IFj-I9-EFs" secondAttribute="centerX" id="T8u-Fm-jC4"/>
+                            <constraint firstItem="7r7-vT-3NU" firstAttribute="centerX" secondItem="IFj-I9-EFs" secondAttribute="centerX" id="dJb-r1-DAe"/>
+                            <constraint firstItem="aCu-gl-1OC" firstAttribute="centerX" secondItem="rr9-cv-fmF" secondAttribute="centerX" id="e0S-ks-76B"/>
+                            <constraint firstItem="aCu-gl-1OC" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leadingMargin" constant="22" id="iTO-7d-xVQ"/>
+                            <constraint firstItem="aCu-gl-1OC" firstAttribute="top" secondItem="wT6-ai-9nW" secondAttribute="bottom" constant="88" id="jDU-Ts-koN"/>
+                            <constraint firstItem="rr9-cv-fmF" firstAttribute="top" secondItem="aCu-gl-1OC" secondAttribute="bottom" constant="8" id="mpi-de-t9w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="rr9-cv-fmF" id="N6a-0Z-KjQ"/>
+                        <outlet property="searchBar" destination="HA1-iQ-PLP" id="ekS-tm-SnG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqd-wc-fRj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756.521739130435" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
