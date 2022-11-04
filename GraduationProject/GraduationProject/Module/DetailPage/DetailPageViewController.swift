@@ -11,6 +11,7 @@ import UIKit
 
 protocol IDetailPageViewController: IBaseView {
     func setTitleLabelText(_ text: String, image: String, price: String)
+    func setCounterAndTotalValue(counter: Int, total: Int)
 }
 
 class DetailPageViewController: BaseViewController, StoryboardLoadable {
@@ -21,8 +22,6 @@ class DetailPageViewController: BaseViewController, StoryboardLoadable {
     @IBOutlet var totalPriceLabel: UILabel!
     @IBOutlet var counterLabel: UILabel!
 
-    var counter = 1
-
     var presenter: IDetailPagePresenter?
 
     override func viewDidLoad() {
@@ -31,42 +30,37 @@ class DetailPageViewController: BaseViewController, StoryboardLoadable {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        counterLabel.text = "\(counter)"
+        counterLabel.text = "\(presenter?.counter ?? 1)"
         totalPriceLabel.text = "\(presenter?.getFoodPrice ?? "") TL"
     }
 
     @IBAction func toBasketButton(_ sender: Any) {
-        presenter?.createNewOrder(foodOrderCount: "\(counter)", userName: "akolukirik")
+        presenter?.createNewOrder(foodOrderCount: "\(presenter?.counter ?? 1)", userName: "akolukirik")
         self.dismiss(animated: true)
     }
 
     @IBAction func increaseButton(_ sender: Any) {
-        counter += 1
-        counterLabel.text = "\(counter)"
-        let total = counter * (Int(presenter?.getFoodPrice ?? "") ?? 1)
-        totalPriceLabel.text = "\(total) TL"
-        
+        presenter?.increaseFoodCount()
     }
 
     @IBAction func decreaseButton(_ sender: Any) {
-        if counter > 1 {
-            counter -= 1
-            counterLabel.text = "\(counter)"
-            let total = counter * (Int(presenter?.getFoodPrice ?? "") ?? 1)
-            totalPriceLabel.text = "\(total) TL"
-        }
+        presenter?.decreaseFooudCount()
     }
 
     @IBAction func backButtonTapped(_ sender: Any) {
         presenter?.dismissPage()
     }
-    
 }
 
 extension DetailPageViewController: IDetailPageViewController {
+    func setCounterAndTotalValue(counter: Int, total: Int) {
+        counterLabel.text = "\(counter)"
+        totalPriceLabel.text = "\(total) TL"
+    }
+
     func setTitleLabelText(_ text: String, image: String, price: String) {
         foodNameLabel.text = text
         foodPriceLabel.text = "\(price) TL"
-        foodImageview.setImage(imageURL: "\(BaseUrl.imgURL)\(image)")
+        foodImageview.setImage(imageURL: "\(presenter?.imgUrl ?? "")")
     }
 }

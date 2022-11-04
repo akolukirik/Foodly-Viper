@@ -8,9 +8,10 @@
 
 import Foundation
 import UIKit
-import Firebase
 
-protocol ILoginPageViewController: IBaseView { }
+protocol ILoginPageViewController: IBaseView {
+    func showAlert(title: String, message: String)
+}
 
 class LoginPageViewController: BaseViewController, StoryboardLoadable {
 
@@ -23,26 +24,22 @@ class LoginPageViewController: BaseViewController, StoryboardLoadable {
         super.viewDidLoad()
     }
 
-    @IBAction func signInButtonClicked(_ sender: Any) {
-        if emailTextField.text?.isEmpty == false && passwordTextField.text != "" {
-            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (authdata, error) in
-                if error != nil {
-                    self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
-                } else {
-                    self.presenter?.navigateHome()
-                }
-            }
-        } else {
-            makeAlert(title: "Error", message: "Username/Password issues..")
-        }
+    @IBAction private func signInButtonClicked(_ sender: Any) {
+        presenter?.loginProcess(userName: emailTextField.text ?? "",
+                                password: passwordTextField.text ?? "")
     }
 
-    @IBAction func signUpButtonClicked(_ sender: Any) {
+    @IBAction private func signUpButtonClicked(_ sender: Any) {
         presenter?.navigateRegister()
     }
-
 }
 
 extension LoginPageViewController: ILoginPageViewController {
+    func showAlert(title: String, message: String) {
+        makeAlert(title: title, message: message)
+    }
+}
 
+extension LoginPageViewController {
+    
 }

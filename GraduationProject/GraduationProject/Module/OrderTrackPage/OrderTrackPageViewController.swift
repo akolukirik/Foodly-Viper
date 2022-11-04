@@ -14,11 +14,12 @@ import MapKit
 extension OrderTrackPageViewController {
     private enum Constants {
         static let latitudeDelta: CLLocationDegrees = 0.01
+        static let longitudeDelta: CLLocationDegrees = 0.02
     }
 }
 
 protocol IOrderTrackPageViewController: IBaseView {
-
+    // TODO: Declare view methods
 }
 
 class OrderTrackPageViewController: BaseViewController, StoryboardLoadable {
@@ -56,7 +57,7 @@ extension OrderTrackPageViewController: CLLocationManagerDelegate  {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[locations.count - 1]
         let getLocation = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        let zoom = MKCoordinateSpan(latitudeDelta: Constants.latitudeDelta, longitudeDelta: 0.02)
+        let zoom = MKCoordinateSpan(latitudeDelta: Constants.latitudeDelta, longitudeDelta: Constants.longitudeDelta)
         let mapZone = MKCoordinateRegion(center: getLocation, span: zoom)
         mapView.setRegion(mapZone, animated: true)
         mapView.showsUserLocation = true

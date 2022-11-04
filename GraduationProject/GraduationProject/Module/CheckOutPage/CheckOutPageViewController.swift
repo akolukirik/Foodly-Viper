@@ -53,7 +53,7 @@ extension CheckOutPageViewController: ICheckOutPageViewController {
 }
 
 extension CheckOutPageViewController {
-
+    
     @objc private func didChangeText(textField: UITextField) {
         textField.text = self.modifyCreditCardString(creditCardString: textField.text!)
     }

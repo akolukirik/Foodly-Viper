@@ -39,5 +39,4 @@ class HomePageInteractor: IHomePageInteractor {
             print(data)
         }
     }
-   
 }

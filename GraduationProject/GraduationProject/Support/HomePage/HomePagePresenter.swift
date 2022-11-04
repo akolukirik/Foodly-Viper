@@ -38,7 +38,11 @@ class HomePagePresenter: IHomePagePresenter {
     }
 
     func search(searchText: String) {
-        interactor?.searchFood(searchText: searchText)
+        if searchText != "" {
+            interactor?.searchFood(searchText: searchText)
+        } else {
+            viewDidLoad()
+        }
     }
 
     func didTappedFood(index: Int) {

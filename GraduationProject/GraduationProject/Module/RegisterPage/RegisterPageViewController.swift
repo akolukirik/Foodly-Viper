@@ -8,10 +8,10 @@
 
 import Foundation
 import UIKit
-import Firebase
 
 protocol IRegisterPageViewController: IBaseView {
-
+    func makeAlertSuccesful()
+    func makeErrorAlert(title: String, message: String)
 }
 
 class RegisterPageViewController: BaseViewController, StoryboardLoadable {
@@ -25,29 +25,25 @@ class RegisterPageViewController: BaseViewController, StoryboardLoadable {
         super.viewDidLoad()
     }
 
-    @IBAction func signUpButtonClicked(_ sender: Any) {
-        if emailTextField.text != "" && passwordTextField.text != "" {
-            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { [self] (authdata, error) in
-                if error != nil {
-                    self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
-                } else {
-                    registerSuccesful()
-                }
-            }
-        } else {
-            makeAlert(title: "Error", message: "Username/Password not null")
-        }
+    @IBAction private func signUpButtonClicked(_ sender: Any) {
+        presenter?.registerProcess(userName: emailTextField.text ?? "",
+                                   password: passwordTextField.text ?? "")
     }
 }
 
 extension RegisterPageViewController: IRegisterPageViewController {
+    func makeErrorAlert(title: String, message: String) {
+        makeAlert(title: title, message: message)
+    }
 
+    func makeAlertSuccesful() {
+        registerSuccesful()
+    }
 }
 
 extension RegisterPageViewController {
     func registerSuccesful() {
         let alert = UIAlertController(title: "Welcome", message: "", preferredStyle: .alert)
-
         let confirmAction = UIAlertAction(title: "Let me in", style: .default) { action in
             self.dismiss(animated: true)
         }

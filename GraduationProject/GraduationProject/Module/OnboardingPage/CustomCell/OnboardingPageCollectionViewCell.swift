@@ -21,6 +21,5 @@ class OnboardingPageCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 }

@@ -10,10 +10,14 @@ import Foundation
 
 protocol IDetailPagePresenter: AnyObject {
     var getFoodPrice: String { get }
+    var counter: Int { get }
+    var imgUrl: String { get }
 
     func viewDidLoad()
     func createNewOrder(foodOrderCount: String, userName: String)
     func dismissPage()
+    func increaseFoodCount()
+    func decreaseFooudCount()
 }
 
 class DetailPagePresenter: IDetailPagePresenter {
@@ -21,6 +25,12 @@ class DetailPagePresenter: IDetailPagePresenter {
     weak var view: IDetailPageViewController?
     var router: IDetailPageRouter?
     var interactor: IDetailPageInteractor?
+
+    var counter: Int = 1
+
+    var imgUrl: String {
+        "\(BaseUrl.imgURL)\(foodImage)"
+    }
 
     var getFoodPrice: String {
         self.foodPrice
@@ -44,6 +54,21 @@ class DetailPagePresenter: IDetailPagePresenter {
 
     func createNewOrder(foodOrderCount: String, userName: String) {
         interactor?.addNewOrderToBasket(foodName: foodName, foodImage: foodImage, foodPrice: foodPrice, foodOrderCount: foodOrderCount, userName: userName)
+    }
+
+    func increaseFoodCount() {
+        counter += 1
+        let total = counter * (Int(foodPrice) ?? 1)
+        view?.setCounterAndTotalValue(counter: counter, total: total)
+        
+    }
+
+    func decreaseFooudCount() {
+        if counter > 1 {
+            counter -= 1
+            let total = counter * (Int(foodPrice) ?? 1)
+            view?.setCounterAndTotalValue(counter: counter, total: total)
+        }
     }
 
     func dismissPage() {

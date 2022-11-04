@@ -7,28 +7,36 @@
 //
 
 import Foundation
-import UIKit
+import Firebase
 
 protocol ILoginPagePresenter: AnyObject {
-    func navigateHome()
     func navigateRegister()
+    func loginProcess(userName: String, password: String)
 }
 
-class LoginPagePresenter {
+class LoginPagePresenter: ILoginPagePresenter {
+
     weak var view: ILoginPageViewController?
     var router: ILoginPageRouter?
     var interactor: ILoginPageInteractor?
-}
 
-extension LoginPagePresenter: ILoginPagePresenter {
     func navigateRegister() {
         router?.navigateToRegisterPage()
     }
 
-    func navigateHome() {
-        router?.navigateToHomePage()
+    func loginProcess(userName: String, password: String) {
+        if userName.isEmpty == false, password != "" {
+            Auth.auth().signIn(withEmail: userName, password: password) { (authdata, error) in
+                if error != nil {
+                    self.view?.showAlert(title: "Error", message: error?.localizedDescription ?? "Error")
+                } else {
+                    self.router?.navigateToHomePage()
+                }
+            }
+        } else {
+            view?.showAlert(title: "Error", message: "Username or Password not null.")
+        }
     }
-
 }
 
 extension LoginPagePresenter: ILoginPageInteractorToPresenter {

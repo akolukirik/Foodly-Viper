@@ -14,8 +14,6 @@ protocol BasketPageCellDelegate {
 
 class BasketPageTableViewCell: UITableViewCell {
 
-    // TODO: Logic işleri için Cell Presenter'ı kullanılabilir.
-
     @IBOutlet var basketImageView: UIImageView!
     @IBOutlet var basketFoodName: UILabel!
     @IBOutlet var basketFoodCount: UILabel!

@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import Firebase
 
 protocol IRegisterPagePresenter: AnyObject {
-
+    func registerProcess(userName: String, password: String)
 }
 
 class RegisterPagePresenter {
@@ -19,7 +20,19 @@ class RegisterPagePresenter {
 }
 
 extension RegisterPagePresenter: IRegisterPagePresenter {
-
+    func registerProcess(userName: String, password: String) {
+        if userName != "" && password != "" {
+            Auth.auth().createUser(withEmail: userName, password: password) { [self] (authdata, error) in
+                if error != nil {
+                    view?.makeErrorAlert(title: "Error", message: error?.localizedDescription ?? "Error")
+                } else {
+                    view?.makeAlertSuccesful()
+                }
+            }
+        } else {
+            view?.makeErrorAlert(title: "Error", message: "Username or Password not null.")
+        }
+    }
 }
 
 extension RegisterPagePresenter: IRegisterPageInteractorToPresenter {
