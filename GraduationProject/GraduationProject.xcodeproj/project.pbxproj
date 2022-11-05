@@ -249,7 +249,6 @@
 				4148730A28FD9A040064E760 /* HomePageRouter.swift */,
 			);
 			name = HomePage;
-			path = ../Support/HomePage;
 			sourceTree = "<group>";
 		};
 		4148731228FD9B650064E760 /* Tabbar */ = {
