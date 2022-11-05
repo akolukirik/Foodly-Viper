@@ -79,7 +79,6 @@
 		41A0FB7928FF71D00045DB26 /* RegisterPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0FB7428FF71D00045DB26 /* RegisterPageRouter.swift */; };
 		41A0FB7A28FF71D00045DB26 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0FB7528FF71D00045DB26 /* RegisterPageViewController.swift */; };
 		41A0FB7B28FF71D00045DB26 /* RegisterPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0FB7628FF71D00045DB26 /* RegisterPageInteractor.swift */; };
-		41A6661528FEF22D0074DA76 /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6661328FEF22D0074DA76 /* HomePageCollectionViewCell.swift */; };
 		41A6661628FEF22D0074DA76 /* HomePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A6661428FEF22D0074DA76 /* HomePageCollectionViewCell.xib */; };
 		41B3CD732909C26B009555FB /* CheckOutPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B3CD6E2909C26B009555FB /* CheckOutPage.storyboard */; };
 		41B3CD742909C26B009555FB /* CheckOutPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3CD6F2909C26B009555FB /* CheckOutPagePresenter.swift */; };
@@ -100,6 +99,7 @@
 		41E97C1A2909B9F9001767AF /* AdressPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E97C152909B9F9001767AF /* AdressPageRouter.swift */; };
 		41E97C1B2909B9F9001767AF /* AdressPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E97C162909B9F9001767AF /* AdressPageViewController.swift */; };
 		41E97C1C2909B9F9001767AF /* AdressPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E97C172909B9F9001767AF /* AdressPageInteractor.swift */; };
+		41FD461C2916A18400A2C7CD /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FD461B2916A18400A2C7CD /* HomePageCollectionViewCell.swift */; };
 		823B4B5229110A3700C90DEC /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823B4B5129110A3700C90DEC /* Collection+Ext.swift */; };
 		823B4B5529110D6000C90DEC /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823B4B5429110D6000C90DEC /* UICollectionView+Ext.swift */; };
 /* End PBXBuildFile section */
@@ -186,7 +186,6 @@
 		41A0FB7428FF71D00045DB26 /* RegisterPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageRouter.swift; sourceTree = "<group>"; };
 		41A0FB7528FF71D00045DB26 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		41A0FB7628FF71D00045DB26 /* RegisterPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageInteractor.swift; sourceTree = "<group>"; };
-		41A6661328FEF22D0074DA76 /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePageCollectionViewCell.swift; path = GraduationProject/Support/HomePage/CustomCell/HomePageCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		41A6661428FEF22D0074DA76 /* HomePageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCollectionViewCell.xib; sourceTree = "<group>"; };
 		41B3CD6E2909C26B009555FB /* CheckOutPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckOutPage.storyboard; sourceTree = "<group>"; };
 		41B3CD6F2909C26B009555FB /* CheckOutPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutPagePresenter.swift; sourceTree = "<group>"; };
@@ -206,6 +205,7 @@
 		41E97C152909B9F9001767AF /* AdressPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressPageRouter.swift; sourceTree = "<group>"; };
 		41E97C162909B9F9001767AF /* AdressPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressPageViewController.swift; sourceTree = "<group>"; };
 		41E97C172909B9F9001767AF /* AdressPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressPageInteractor.swift; sourceTree = "<group>"; };
+		41FD461B2916A18400A2C7CD /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		823B4B5129110A3700C90DEC /* Collection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ext.swift"; sourceTree = "<group>"; };
 		823B4B5429110D6000C90DEC /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -266,8 +266,7 @@
 				419E1D1E28FC55FC00CDCF71 /* HomePageEntity.swift */,
 				4148730A28FD9A040064E760 /* HomePageRouter.swift */,
 			);
-			name = HomePage;
-			path = ../Support/HomePage;
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		4148731228FD9B650064E760 /* Tabbar */ = {
@@ -505,8 +504,8 @@
 		41A6661228FEF1FF0074DA76 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				41FD461B2916A18400A2C7CD /* HomePageCollectionViewCell.swift */,
 				41A6661428FEF22D0074DA76 /* HomePageCollectionViewCell.xib */,
-				41A6661328FEF22D0074DA76 /* HomePageCollectionViewCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -767,6 +766,7 @@
 				419E1D0F28FC539900CDCF71 /* UITableView+Ext.swift in Sources */,
 				41A079E7290032B8006580AD /* OnboardingPagePresenter.swift in Sources */,
 				4108EB272909B2F200CA8817 /* PaymentMethodPagePresenter.swift in Sources */,
+				41FD461C2916A18400A2C7CD /* HomePageCollectionViewCell.swift in Sources */,
 				4148734928FDB0240064E760 /* BasketPageEntity.swift in Sources */,
 				41B3CD762909C26B009555FB /* CheckOutPageViewController.swift in Sources */,
 				41E1BB7C290AAD2700EE98E3 /* BasketHandler.swift in Sources */,
@@ -807,7 +807,6 @@
 				41B3CD772909C26B009555FB /* CheckOutPageInteractor.swift in Sources */,
 				419E1D1228FC539900CDCF71 /* UIImageViewExtension.swift in Sources */,
 				419E1D0028FC530D00CDCF71 /* AppRouter.swift in Sources */,
-				41A6661528FEF22D0074DA76 /* HomePageCollectionViewCell.swift in Sources */,
 				41B3CD752909C26B009555FB /* CheckOutPageRouter.swift in Sources */,
 				41E97C1B2909B9F9001767AF /* AdressPageViewController.swift in Sources */,
 				419E1D1728FC540700CDCF71 /* UIStoryboard+Ext.swift in Sources */,
