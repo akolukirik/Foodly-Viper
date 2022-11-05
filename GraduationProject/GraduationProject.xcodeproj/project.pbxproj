@@ -104,12 +104,23 @@
 		823B4B5529110D6000C90DEC /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823B4B5429110D6000C90DEC /* UICollectionView+Ext.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		411D0845291564B400AA4F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 419E1CD328FC501800CDCF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 419E1CDA28FC501800CDCF71;
+			remoteInfo = GraduationProject;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4108EB212909B2F200CA8817 /* PaymentMethodPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentMethodPage.storyboard; sourceTree = "<group>"; };
 		4108EB222909B2F200CA8817 /* PaymentMethodPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPagePresenter.swift; sourceTree = "<group>"; };
 		4108EB232909B2F200CA8817 /* PaymentMethodPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPageRouter.swift; sourceTree = "<group>"; };
 		4108EB242909B2F200CA8817 /* PaymentMethodPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPageViewController.swift; sourceTree = "<group>"; };
 		4108EB252909B2F200CA8817 /* PaymentMethodPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPageInteractor.swift; sourceTree = "<group>"; };
+		411D0841291564B400AA4F4E /* GraduationProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GraduationProjectTests.xctest; path = "/Users/ali/Documents/GitHub/Foodly-Viper/GraduationProject/build/Debug-iphoneos/GraduationProjectTests.xctest"; sourceTree = "<absolute>"; };
 		41471C6A290EEC760027D4A2 /* BaseEndPointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndPointRouter.swift; sourceTree = "<group>"; };
 		41471C6C290EEC8A0027D4A2 /* SimpleEndPointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEndPointRouter.swift; sourceTree = "<group>"; };
 		4148730828FD9A040064E760 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
@@ -129,7 +140,7 @@
 		415967E12909DEEB007DF3B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		415FCD502905597F004658E2 /* Url+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Url+Ext.swift"; sourceTree = "<group>"; };
 		4193D6EB29008D5F00EA31F8 /* RedHatDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RedHatDisplay.ttf; sourceTree = "<group>"; };
-		419E1CDB28FC501800CDCF71 /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraduationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		419E1CDB28FC501800CDCF71 /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = GraduationProject.app; path = "/Users/ali/Documents/GitHub/Foodly-Viper/GraduationProject/build/Debug-iphoneos/GraduationProject.app"; sourceTree = "<absolute>"; };
 		419E1CDE28FC501800CDCF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		419E1CE728FC501900CDCF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419E1CEA28FC501900CDCF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -200,6 +211,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		411D083E291564B400AA4F4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419E1CD828FC501800CDCF71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +267,7 @@
 				4148730A28FD9A040064E760 /* HomePageRouter.swift */,
 			);
 			name = HomePage;
+			path = ../Support/HomePage;
 			sourceTree = "<group>";
 		};
 		4148731228FD9B650064E760 /* Tabbar */ = {
@@ -321,17 +340,8 @@
 			isa = PBXGroup;
 			children = (
 				419E1CDD28FC501800CDCF71 /* GraduationProject */,
-				419E1CDC28FC501800CDCF71 /* Products */,
 				415967E02909DEEB007DF3B2 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		419E1CDC28FC501800CDCF71 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				419E1CDB28FC501800CDCF71 /* GraduationProject.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		419E1CDD28FC501800CDCF71 /* GraduationProject */ = {
@@ -605,6 +615,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		411D0840291564B400AA4F4E /* GraduationProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 411D0849291564B400AA4F4E /* Build configuration list for PBXNativeTarget "GraduationProjectTests" */;
+			buildPhases = (
+				411D083D291564B400AA4F4E /* Sources */,
+				411D083E291564B400AA4F4E /* Frameworks */,
+				411D083F291564B400AA4F4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				411D0846291564B400AA4F4E /* PBXTargetDependency */,
+			);
+			name = GraduationProjectTests;
+			productName = GraduationProjectTests;
+			productReference = 411D0841291564B400AA4F4E /* GraduationProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		419E1CDA28FC501800CDCF71 /* GraduationProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 419E1CEF28FC501900CDCF71 /* Build configuration list for PBXNativeTarget "GraduationProject" */;
@@ -636,9 +664,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					411D0840291564B400AA4F4E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 419E1CDA28FC501800CDCF71;
+					};
 					419E1CDA28FC501800CDCF71 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -659,16 +691,24 @@
 				41A0FB6128FF6CC10045DB26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				41BC8A2A290C5DB0009FF972 /* XCRemoteSwiftPackageReference "netfox" */,
 			);
-			productRefGroup = 419E1CDC28FC501800CDCF71 /* Products */;
+			productRefGroup = 419E1CD228FC501800CDCF71;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				419E1CDA28FC501800CDCF71 /* GraduationProject */,
+				411D0840291564B400AA4F4E /* GraduationProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		411D083F291564B400AA4F4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419E1CD928FC501800CDCF71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -697,6 +737,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		411D083D291564B400AA4F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		419E1CD728FC501800CDCF71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -777,6 +824,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		411D0846291564B400AA4F4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 419E1CDA28FC501800CDCF71 /* GraduationProject */;
+			targetProxy = 411D0845291564B400AA4F4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		419E1CE928FC501900CDCF71 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -789,6 +844,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		411D0847291564B400AA4F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ali.kolukirik.GraduationProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraduationProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GraduationProject";
+			};
+			name = Debug;
+		};
+		411D0848291564B400AA4F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ali.kolukirik.GraduationProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraduationProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GraduationProject";
+			};
+			name = Release;
+		};
 		419E1CED28FC501900CDCF71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -980,6 +1073,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		411D0849291564B400AA4F4E /* Build configuration list for PBXNativeTarget "GraduationProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411D0847291564B400AA4F4E /* Debug */,
+				411D0848291564B400AA4F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		419E1CD628FC501800CDCF71 /* Build configuration list for PBXProject "GraduationProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
