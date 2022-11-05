@@ -120,7 +120,6 @@
 		4108EB232909B2F200CA8817 /* PaymentMethodPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPageRouter.swift; sourceTree = "<group>"; };
 		4108EB242909B2F200CA8817 /* PaymentMethodPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPageViewController.swift; sourceTree = "<group>"; };
 		4108EB252909B2F200CA8817 /* PaymentMethodPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodPageInteractor.swift; sourceTree = "<group>"; };
-		411D0841291564B400AA4F4E /* GraduationProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GraduationProjectTests.xctest; path = "/Users/ali/Documents/GitHub/Foodly-Viper/GraduationProject/build/Debug-iphoneos/GraduationProjectTests.xctest"; sourceTree = "<absolute>"; };
 		41471C6A290EEC760027D4A2 /* BaseEndPointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndPointRouter.swift; sourceTree = "<group>"; };
 		41471C6C290EEC8A0027D4A2 /* SimpleEndPointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEndPointRouter.swift; sourceTree = "<group>"; };
 		4148730828FD9A040064E760 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
@@ -140,7 +139,6 @@
 		415967E12909DEEB007DF3B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		415FCD502905597F004658E2 /* Url+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Url+Ext.swift"; sourceTree = "<group>"; };
 		4193D6EB29008D5F00EA31F8 /* RedHatDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RedHatDisplay.ttf; sourceTree = "<group>"; };
-		419E1CDB28FC501800CDCF71 /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = GraduationProject.app; path = "/Users/ali/Documents/GitHub/Foodly-Viper/GraduationProject/build/Debug-iphoneos/GraduationProject.app"; sourceTree = "<absolute>"; };
 		419E1CDE28FC501800CDCF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		419E1CE728FC501900CDCF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419E1CEA28FC501900CDCF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -206,6 +204,8 @@
 		41E97C162909B9F9001767AF /* AdressPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressPageViewController.swift; sourceTree = "<group>"; };
 		41E97C172909B9F9001767AF /* AdressPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressPageInteractor.swift; sourceTree = "<group>"; };
 		41FD461B2916A18400A2C7CD /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
+		41FD461F2916A38B00A2C7CD /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = GraduationProject.app; path = "/Users/ali/Documents/GitHub/Foodly-Viper/GraduationProject/build/Debug-iphoneos/GraduationProject.app"; sourceTree = "<absolute>"; };
+		41FD46202916A38B00A2C7CD /* GraduationProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GraduationProjectTests.xctest; path = "/Users/ali/Documents/GitHub/Foodly-Viper/GraduationProject/build/Debug-iphoneos/GraduationProjectTests.xctest"; sourceTree = "<absolute>"; };
 		823B4B5129110A3700C90DEC /* Collection+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ext.swift"; sourceTree = "<group>"; };
 		823B4B5429110D6000C90DEC /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -629,7 +629,7 @@
 			);
 			name = GraduationProjectTests;
 			productName = GraduationProjectTests;
-			productReference = 411D0841291564B400AA4F4E /* GraduationProjectTests.xctest */;
+			productReference = 41FD46202916A38B00A2C7CD /* GraduationProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		419E1CDA28FC501800CDCF71 /* GraduationProject */ = {
@@ -653,7 +653,7 @@
 				41BC8A2B290C5DB1009FF972 /* netfox */,
 			);
 			productName = GraduationProject;
-			productReference = 419E1CDB28FC501800CDCF71 /* GraduationProject.app */;
+			productReference = 41FD461F2916A38B00A2C7CD /* GraduationProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
